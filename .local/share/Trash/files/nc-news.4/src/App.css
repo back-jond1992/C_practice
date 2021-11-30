@@ -1,0 +1,235 @@
+.App {
+  line-height: 200%;
+  font-family: "Ubuntu", sans-serif;
+  background-color: #ffffff;
+  text-align: center;
+  height: 100vh;
+  max-height: 100vh;
+  grid-template-columns: 100%;
+  grid-template-rows: min-content min-content auto;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main";
+}
+
+.header {
+  grid-area: header;
+}
+
+h1 {
+  font-size: 10vw;
+  color: black;
+}
+
+a {
+  color: black;
+}
+
+i {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  padding: 1em;
+  margin: -1em;
+}
+
+Select {
+  background-color: #fad4d8;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+  font-size: 14px;
+}
+
+button {
+  border: solid #fad4d8 2px;
+  background-color: white;
+  color: black;
+  padding: 5px 15px;
+  margin: 1vw;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
+
+button:active {
+  background-color: #88a0a8;
+  box-shadow: 0 5px #666;
+}
+
+button-voted {
+  background-color: #fad4d8;
+}
+
+.fa-heart {
+  color: #88a0a8;
+  font-size: 1.5rem;
+}
+
+.fa-comments {
+  color: #88a0a8;
+  font-size: 1.5rem;
+}
+
+.fa-thumbs-up {
+  color: #88a0a8;
+  font-size: 1rem;
+}
+
+.fa-thumbs-down {
+  color: #88a0a8;
+  font-size: 1rem;
+}
+
+.fa-thumbs-up-voted {
+  color: #88a0a8;
+  font-size: 1rem;
+}
+
+.articles {
+  grid-area: main;
+  max-height: 100vh;
+  overflow: scroll;
+  scrollbar-width: none;
+  background-color: #ffffff;
+}
+
+.articles::-webkit-scrollbar {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  grid-area: nav;
+  background-color: #88a0a8;
+  margin-bottom: 10px;
+}
+
+.navBarLeft {
+  text-align: left;
+  flex: 1;
+  margin: 10px;
+  display: inline-block;
+  align-content: flex-start;
+}
+
+.navBarRight {
+  text-align: right;
+  margin: 10px;
+}
+
+.articles {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.articleCard {
+  border: solid 2px #fad4d8;
+  border-radius: 5px;
+  max-width: 40%;
+  margin: 10px;
+  padding: 20px;
+}
+
+#topicsForm {
+  display: inline;
+  margin: 10px;
+}
+
+#userThumbnail {
+  border: 1px #fad4d8 solid;
+  border-radius: 50%;
+  padding: 5px;
+  height: 4vh;
+  width: auto;
+  position: absolute;
+  float: left;
+  right: 10px;
+}
+
+#userName {
+  display: inline;
+}
+
+.loginPage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+}
+
+.userCard {
+  margin: 20px;
+  padding: 10px;
+  border: solid 2px #fad4d8;
+}
+
+.userImage {
+  border-radius: 20px;
+  padding: 10px;
+  width: 100px;
+}
+
+.loginPage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.welcomeBack {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+
+.readArticleCards {
+  margin: 15px;
+  padding: 15px;
+  border: solid 2px #fad4d8;
+  border-radius: 5px;
+}
+
+.readArticles {
+  margin: 10px;
+  padding: 10px;
+}
+
+.commentCard {
+  border: solid 2px #fad4d8;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.sortBox {
+  position: static;
+  margin-bottom: 20px;
+  right: 3vw;
+}
+
+.sort_bar {
+  height: 3vh;
+  text-align: right;
+}
+
+#body {
+  width: 75vw;
+}
+
+.fa-sad-tear {
+  font-size: 20rem;
+  color: #fad4d8;
+}
+
+.errorCode {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.welcomeBack {
+  border: solid 2px #fad4d8;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+}
